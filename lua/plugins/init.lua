@@ -61,6 +61,12 @@ return require("packer").startup(function(use)
         requires = { "nvim-lua/plenary.nvim" }
     }
 
+    -- LaTeX
+    use {
+        "lervag/vimtex",
+        ft = { "tex" },
+    }
+
     -- Syntax Highlighting
     use {
         "nvim-treesitter/nvim-treesitter",
