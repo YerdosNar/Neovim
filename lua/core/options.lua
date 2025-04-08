@@ -5,6 +5,8 @@ vim.opt.cursorline = true
 vim.opt.wrap = true
 vim.cmd("colorscheme gruvbox")
 vim.g.vimtex_view_method = 'zathura'
+vim.api.nvim_set_hl(0, "Normal", { bg =  "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg =  "none" })
 
 -- Indentation
 vim.opt.tabstop = 4
