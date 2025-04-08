@@ -14,6 +14,7 @@ return require("packer").startup(function(use)
     use "wbthomason/packer.nvim"
 
     -- UI Plugins
+    use "folke/tokyonight.nvim"
     use "morhetz/gruvbox"
     use "nvim-tree/nvim-tree.lua"
     use "nvim-lualine/lualine.nvim"
