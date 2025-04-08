@@ -14,19 +14,46 @@ return require("packer").startup(function(use)
     use "wbthomason/packer.nvim"
 
     -- UI Plugins
-    use "folke/tokyonight.nvim"
     use "morhetz/gruvbox"
     use "nvim-tree/nvim-tree.lua"
     use "nvim-lualine/lualine.nvim"
     use "nvim-tree/nvim-web-devicons"
 
     -- LSP & Completion
-    use "neovim/nvim-lspconfig"
     use "hrsh7th/nvim-cmp"
     use "hrsh7th/cmp-nvim-lsp"
     use "hrsh7th/cmp-buffer"
     use "hrsh7th/cmp-path"
     use "L3MON4D3/LuaSnip"
+
+    -- Mason
+    use {
+        "williamboman/mason.nvim",
+        config = function()
+            require("mason").setup()
+        end
+    }
+
+    -- Then Mason-LSPconfig
+    use {
+        "williamboman/mason-lspconfig.nvim",
+        after = "mason.nvim", -- makes sure mason is loaded first
+        config = function()
+            require("mason-lspconfig").setup({
+                ensure_installed = { "jdtls" },
+                automatic_installation = true,
+            })
+        end
+    }
+
+    -- Then setup jdtls with lspconfig
+    use {
+        "neovim/nvim-lspconfig",
+        config = function()
+            local lspconfig = require("lspconfig")
+            lspconfig.jdtls.setup({})
+        end
+    }
 
     -- Fuzzy Finder
     use {
@@ -40,12 +67,6 @@ return require("packer").startup(function(use)
         run = ":TSUpdate"
     }
 
-    -- LaTeX
-    use {
-        "lervag/vimtex",
-        ft = { "tex" },
-    }
-
     -- Miscellaneous
     use "jiangmiao/auto-pairs"
     use "windwp/nvim-ts-autotag"
@@ -56,4 +77,3 @@ return require("packer").startup(function(use)
         require("packer").sync()
     end
 end)
-
