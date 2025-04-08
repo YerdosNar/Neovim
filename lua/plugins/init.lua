@@ -18,7 +18,7 @@ return require("packer").startup(function(use)
     use "morhetz/gruvbox"
     use "nvim-tree/nvim-tree.lua"
     use "nvim-lualine/lualine.nvim"
-    use "nvim-tree/nvim-web-devicons"
+    -- use "nvim-tree/nvim-web-devicons"
 
     -- LSP & Completion
     use "hrsh7th/nvim-cmp"
