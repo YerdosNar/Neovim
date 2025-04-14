@@ -17,3 +17,7 @@ vim.opt.autoindent = true
 -- Enable mouse
 vim.opt.mouse = "a"
 
+-- Folding
+vim.o.foldmethod = "expr"
+vim.o.foldexpr = "nvim-treesitter#foldexpr()"
+vim.o.foldlevel = 99

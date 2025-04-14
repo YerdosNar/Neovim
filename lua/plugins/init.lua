@@ -79,6 +79,48 @@ return require("packer").startup(function(use)
     use "windwp/nvim-ts-autotag"
     use "tpope/vim-fugitive"
     use "terrortylor/nvim-comment"
+    use {
+        "numToStr/Comment.nvim",
+        config = function()
+            require("Comment").setup()
+        end
+    }
+
+    -- Indent color
+    use {
+        "lukas-reineke/indent-blankline.nvim",
+        main = "ibl",
+        config = function()
+            require("ibl").setup({
+                indent = {
+                    char = "|"
+                },
+                scope = {
+                    enabled = true,
+                    show_start  = true,
+                    show_end = true,
+                    highlight = {
+                        "Function",
+                        "Label",
+                    },
+                }
+            })
+        end
+    }
+
+    -- Folding
+    use {
+        "kevinhwang91/nvim-ufo",
+        requires = "kevinhwang91/promise-async",
+        config = function()
+            vim.o.foldcolumn = "1"
+            vim.o.foldlevel = 99
+            vim.o.foldlevelstart = 99
+            vim.o.foldenable = true
+
+            require("ufo").setup()
+        end
+    }
 
     if packer_bootstrap then
         require("packer").sync()
