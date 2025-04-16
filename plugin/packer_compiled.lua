@@ -111,7 +111,7 @@ _G.packer_plugins = {
     url = "https://github.com/morhetz/gruvbox"
   },
   ["indent-blankline.nvim"] = {
-    config = { "\27LJ\2\n¿\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\nscope\14highlight\1\3\0\0\rFunction\nLabel\1\0\4\15show_start\2\14highlight\0\fenabled\2\rshow_end\2\vindent\1\0\2\vindent\0\nscope\0\1\0\1\tchar\6|\nsetup\bibl\frequire\0" },
+    config = { "\27LJ\2\n¿\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\nscope\14highlight\1\3\0\0\rFunction\nLabel\1\0\4\14highlight\0\rshow_end\2\15show_start\2\fenabled\2\vindent\1\0\2\vindent\0\nscope\0\1\0\1\tchar\6|\nsetup\bibl\frequire\0" },
     loaded = true,
     path = "/home/yerdos/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
@@ -214,26 +214,26 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-try_loadstring("\27LJ\2\nE\0\0\4\0\4\0\b6\0\0\0'\2\1\0B\0\2\0029\1\2\0009\1\3\0014\3\0\0B\1\2\1K\0\1\0\nsetup\njdtls\14lspconfig\frequire\0", "config", "nvim-lspconfig")
-time([[Config for nvim-lspconfig]], false)
--- Config for: nvim-ufo
-time([[Config for nvim-ufo]], true)
-try_loadstring("\27LJ\2\n®\1\0\0\3\0\n\0\0226\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0)\1c\0=\1\4\0006\0\0\0009\0\1\0)\1c\0=\1\5\0006\0\0\0009\0\1\0+\1\2\0=\1\6\0006\0\a\0'\2\b\0B\0\2\0029\0\t\0B\0\1\1K\0\1\0\nsetup\bufo\frequire\15foldenable\19foldlevelstart\14foldlevel\0061\15foldcolumn\6o\bvim\0", "config", "nvim-ufo")
-time([[Config for nvim-ufo]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
 time([[Config for Comment.nvim]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+try_loadstring("\27LJ\2\nE\0\0\4\0\4\0\b6\0\0\0'\2\1\0B\0\2\0029\1\2\0009\1\3\0014\3\0\0B\1\2\1K\0\1\0\nsetup\njdtls\14lspconfig\frequire\0", "config", "nvim-lspconfig")
+time([[Config for nvim-lspconfig]], false)
 -- Config for: mason.nvim
 time([[Config for mason.nvim]], true)
 try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nmason\frequire\0", "config", "mason.nvim")
 time([[Config for mason.nvim]], false)
 -- Config for: indent-blankline.nvim
 time([[Config for indent-blankline.nvim]], true)
-try_loadstring("\27LJ\2\n¿\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\nscope\14highlight\1\3\0\0\rFunction\nLabel\1\0\4\15show_start\2\14highlight\0\fenabled\2\rshow_end\2\vindent\1\0\2\vindent\0\nscope\0\1\0\1\tchar\6|\nsetup\bibl\frequire\0", "config", "indent-blankline.nvim")
+try_loadstring("\27LJ\2\n¿\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\nscope\14highlight\1\3\0\0\rFunction\nLabel\1\0\4\14highlight\0\rshow_end\2\15show_start\2\fenabled\2\vindent\1\0\2\vindent\0\nscope\0\1\0\1\tchar\6|\nsetup\bibl\frequire\0", "config", "indent-blankline.nvim")
 time([[Config for indent-blankline.nvim]], false)
+-- Config for: nvim-ufo
+time([[Config for nvim-ufo]], true)
+try_loadstring("\27LJ\2\n®\1\0\0\3\0\n\0\0226\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0)\1c\0=\1\4\0006\0\0\0009\0\1\0)\1c\0=\1\5\0006\0\0\0009\0\1\0+\1\2\0=\1\6\0006\0\a\0'\2\b\0B\0\2\0029\0\t\0B\0\1\1K\0\1\0\nsetup\bufo\frequire\15foldenable\19foldlevelstart\14foldlevel\0061\15foldcolumn\6o\bvim\0", "config", "nvim-ufo")
+time([[Config for nvim-ufo]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd mason-lspconfig.nvim ]]
