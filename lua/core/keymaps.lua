@@ -16,5 +16,8 @@ map("n", "<C-a>", "ggVG", opts)
 -- Copy to system clipboard
 map("n", "<C-y>", "\"+y", opts)
 
--- Save
-map("n", "<C-s>", ":w<CR>", opts)
+-- Spell check
+map("n", "<C-s>", ":set spell<CR>", opts)
+
+-- Opening the terminal
+map("n", "<leader>t", ":terminal<CR>", opts)
