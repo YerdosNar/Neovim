@@ -20,4 +20,4 @@ map("n", "<C-y>", "\"+y", opts)
 map("n", "<C-s>", ":set spell<CR>", opts)
 
 -- Opening the terminal
-map("n", "<leader>t", ":terminal<CR>", opts)
+map("n", "<leader>t", ":ToggleTerm<CR>", opts)

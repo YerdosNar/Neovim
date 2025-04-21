@@ -74,6 +74,15 @@ return require("packer").startup(function(use)
         run = ":TSUpdate"
     }
 
+    use {
+        "akinsho/toggleterm.nvim",
+        tag = '*',
+        config = function()
+            require("toggleterm").setup()
+        end
+
+    }
+
     -- Miscellaneous
     use "jiangmiao/auto-pairs"
     use "windwp/nvim-ts-autotag"
