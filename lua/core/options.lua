@@ -2,6 +2,7 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
+vim.opt.guicursor = "n-v-i-c:block-Cursor"
 vim.opt.wrap = true
 vim.cmd("colorscheme gruvbox")
 vim.g.vimtex_view_method = 'zathura'
