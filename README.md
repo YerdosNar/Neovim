@@ -6,13 +6,9 @@
 You will need Neovim v0.11.0, for some plugins require that. You can download from here `https://github.com/neovim/neovim/blob/master/INSTALL.md`.
 
 ## Installation
-Go inside
-```bash
- cd ~/.config
-```
 There
 ```bash
-git clone https://github.com/YerdosNar/Neovim.git nvim
+git clone https://github.com/YerdosNar/Neovim.git ~/.config/nvim
 ```
 
 Open
