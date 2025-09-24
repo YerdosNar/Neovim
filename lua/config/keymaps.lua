@@ -12,16 +12,16 @@ keymap("i", "<C-j>", "<Esc>o", opts)
 
 keymap("i", "<C-k>", "<Esc>O", opts)
 
-keymap("i", "<C-S-j>", "<Esc>ji", opts)
+keymap("i", "<C-S-j>", "<Esc>j", opts)
 
-keymap("i", "<C-S-k>", "<Esc>ki", opts)
+keymap("i", "<C-S-k>", "<Esc>k", opts)
 
 -- Select all
 keymap("n", "<C-a>", "ggVG", opts)
 
 -- Copy to system clipboard in visual mode
 -- Note: Changed from <C-s> to <C-c> to avoid conflict with spell check toggle
-keymap("v", "<C-c>", '"+y', opts)
+keymap("v", "<C-c>", '"+y<C-o>', opts)
 
 -- Enable spell check
 keymap("n", "<C-s>", ":set spell!<CR>", opts)
@@ -56,10 +56,10 @@ keymap({"n", "v"}, "<leader>c", "gcc", { desc = "Toggle Comment", noremap = fals
 
 
 -- toggleterm (Terminal)
-keymap("n", "<leader>t", "<cmd>ToggleTerm<CR>", { desc = "Toggle Terminal", silent = true })
+keymap("n", "<leader>t", ":w<CR> <cmd>ToggleTerm<CR>", { desc = "Toggle Terminal", silent = true })
 
 -- Markdown
-keymap("n", "<leader>mk", ":MarkdownPreview<CR>", { desc = "Markdown type previewer", silent = true })
+keymap("n", "<leader>mk", ":set spell<CR> :MarkdownPreview<CR>", { desc = "Markdown type previewer", silent = true })
 
 
 --[[ LSP Keymaps ]]
