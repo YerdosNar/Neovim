@@ -19,17 +19,16 @@ return {
     "neovim/nvim-lspconfig",
     dependencies = { "williamboman/mason-lspconfig.nvim" },
     config = function()
-      local lspconfig = require("lspconfig")
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
       local keymaps = require("config.keymaps") -- Import the keymaps module
 
       local servers = { "jdtls", "lua_ls", "pyright" }
 
       for _, server in ipairs(servers) do
-        lspconfig[server].setup({
+        vim.lsp.config[server] = {
           on_attach = keymaps.on_attach, -- Use the on_attach function from keymaps file
           capabilities = capabilities,
-        })
+        }
       end
     end,
   },
