@@ -8,6 +8,8 @@ local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
 -- Movement
+keymap("n", "j", "gj", opts)
+keymap("n", "k", "gk", opts)
 keymap("i", "<C-j>", "<Esc>o", opts)
 
 keymap("i", "<C-k>", "<Esc>O", opts)
