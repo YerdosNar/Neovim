@@ -1,5 +1,3 @@
--- /home/karina/.config/nvim/init.lua
-
 -- Set leader key (must be done before plugins)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
