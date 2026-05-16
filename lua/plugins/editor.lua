@@ -9,7 +9,7 @@ return {
                 ensure_installed = { "lua", "python", "c", "cpp", "java", "html", "css", "javascript" },
                 highlight = { enable = true },
                 autotag = { enable = true },
-                indent = { enable = true },
+                indent = { enable = false },
             })
         end,
     },
