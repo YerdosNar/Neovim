@@ -2,15 +2,12 @@ return {
     -- Syntax highlighting
     {
         "nvim-treesitter/nvim-treesitter",
-        branch = "master",
+        branch = "main",
         build = ":TSUpdate",
         config = function()
-            require("nvim-treesitter.configs").setup({
-                ensure_installed = { "lua", "python", "c", "cpp", "java", "html", "css", "javascript" },
-                highlight = { enable = true },
-                autotag = { enable = true },
-                indent = { enable = false },
-            })
+                require("nvim-treesitter").setup()
+                local ts = require("nvim-treesitter")
+                ts.install({ "lua", "c", "python", "markdown", "markdown_inline" })
         end,
     },
 
